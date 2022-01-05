@@ -1,6 +1,7 @@
 # DROP TABLES
 
-airport_codes_table_drop = "DROP TABLE IF EXISTS airport_codes_csv_csv"
+airport_codes_table_drop = "DROP TABLE IF EXISTS airport_codes"
+immigration_table_drop = "DROP TABLE IF EXISTS immigration"
 # user_table_drop = "DROP TABLE IF EXISTS users"
 # song_table_drop = "DROP TABLE IF EXISTS songs"
 # artist_table_drop = "DROP TABLE IF EXISTS artists"
@@ -78,4 +79,4 @@ airport_codes_table_drop = "DROP TABLE IF EXISTS airport_codes_csv_csv"
 # # QUERY LISTS
 #
 # create_table_queries = [songplay_table_create, user_table_create, song_table_create, artist_table_create, time_table_create]
-drop_table_queries = [airport_codes_table_drop]
+drop_table_queries = [airport_codes_table_drop, immigration_table_drop]
