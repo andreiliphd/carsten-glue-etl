@@ -43,6 +43,14 @@ git@github.com:andreiliphd/carsten-glue-etl.git
 
 
 ## Usage
+1. Upload Immigration dataset from `data/sas-data` to S3. Remember to upload only `parquet` files
+as it causes errors in AWS Glue while loading data.
+2. Upload Airport Codes dataset from `data/`.
+3. Construct in AWS Glue Visual Editor necessary steps to make a mapping from S3 to AWS Catalog.
+You can query data later with AWS Athena.
+4. Open ETL Jobs and setup ETL Pipeline.
+5. Upload code from this repository to ETL Jobs Pipeline.
+Enjoy simplified ETL process.
 
 ---
 
