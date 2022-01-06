@@ -55,6 +55,7 @@ Following datasets are used for this project:
 
 Total number of rows after ETL: 3108393.
 For more details, please, check `size_of_database.ipynb`.
+You can also find number of rows in database from [Data Quality](#data-quality) section of this file.
 
 ## Data Exploration
 Data Exploration was performed using AWS Athena.
