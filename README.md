@@ -155,11 +155,13 @@ We can scale vertically.
 ### Airport codes
 Full [report](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=airport%2Dcodes_74003fcc5eb44b85c6f6e5802979f5cc67c3d5186c09e1056681e74e1b4a5161.json).
 
-![airport-codes](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=airport%2Dcodes%20profile%20job_2022%2D01%2D06%2D02_51_06.png)
+![airport-codes](https://github.com/andreiliphd/carsten-glue-etl/blob/master/data-quality-reports/airport-codes%20profile%20job_2022-01-06-02_51_06.png?raw=true)
+
 ### State codes
 Full [report](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=state%2Dcodes_7e9ad332a45e3b174b68c634396d762cf206ce2f04706e6a31b9f750121c91ad.json).
 
 ![state-codes](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=state%2Dcodes%20profile%20job_2022%2D01%2D06%2D12_04_25.png)
+
 ### Immigration
 Full [report](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=immigration_2435c2a91f69448a135f1a5d93b2b81d0b88005c02b33c20c9c44b98576ac7d9.json).
 
