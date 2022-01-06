@@ -117,6 +117,9 @@ ETL steps:
 2. Cleaning data.
 3. Moving data to PostgreSQL.
 
+The whole process is automatic and can be scheduled, run on demand or triggered by event.
+![workflow](https://github.com/andreiliphd/carsten-glue-etl/blob/master/screenshots/workflow.png?raw=true)
+
 ## Explanation
 ETL performed in AWS Glue.
 Data quality checks performed in AWS DataBrew.
