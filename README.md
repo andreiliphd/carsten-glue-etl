@@ -34,9 +34,9 @@ ETL to preprocess data for analyzing airports used by immigrants in US.
 
 ## Queries
 Analytics queries include:
-- Which airport immigrants used the most to travel to?
-- Which airport immigrants used the most to travel from?
-- What are top most airports used by immigrants?
+- What is the total population of top 3 most loved states by immigrants?
+- What types of airports immigrants prefer?
+You can find these queries in `queries.ipynb`.
 
 ## Datasets
 Following datasets are used for this project:
