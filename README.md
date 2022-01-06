@@ -203,6 +203,10 @@ choose different strategies for distributing your traffic across replicas in AWS
 I also want to mention that S3 is growing very fast and AWS Athena allows working
 with more comfort even with CSV data. You can offload some heavy tasks from PostgreSQL
 to S3. And query your data with AWS Athena.
+Regarding user management there is an excellent article on 
+[AWS Blog](https://aws.amazon.com/ru/blogs/database/managing-postgresql-users-and-roles/).
+We should create database roles, users and group. We can also use IAM for authentication.
+RDS Parameter Groups can be used to customize monitoring of user activity.
 
 ## Data Quality
 ### Airport codes
