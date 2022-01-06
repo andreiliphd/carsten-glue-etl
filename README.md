@@ -55,7 +55,8 @@ Pluses:
 Minuses:
 - Performing rare low level operations can be complicated
 
-
+### Project
+The aim of the project is to analyze airports immigrants use most.
 
 ## Features
 - AWS Athena support
@@ -72,8 +73,16 @@ git@github.com:andreiliphd/carsten-glue-etl.git
 
 ---
 
-## File structure
+## File and folder structure
+`setup_database.py` - creating database and dropping tables if exists.
 
+`sql_queries.py` - SQL Queries
+
+`test.ipynb` - test functionality
+
+`data-quality-checks/` - reports on data quality
+
+`data/` - datasets
 
 ---
 
@@ -81,7 +90,7 @@ git@github.com:andreiliphd/carsten-glue-etl.git
 ## Usage
 1. Upload Immigration dataset from `data/sas-data` to S3. Remember to upload only `parquet` files
 as it causes errors in AWS Glue while loading data.
-2. Upload Airport Codes dataset from `data/`.
+2. Upload Airport Codes dataset from `data/` to S3.
 3. Construct in AWS Glue Visual Editor necessary steps to make a mapping from S3 to AWS Catalog.
 You can query data later with AWS Athena.
 4. Open ETL Jobs and setup ETL Pipeline.
@@ -91,6 +100,8 @@ Enjoy simplified ETL process.
 ---
 
 ## Explanation
+ETL performed in AWS Glue.
+Data quality checks performed in AWS DataBrew.
 
 ---
 
