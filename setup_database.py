@@ -81,36 +81,17 @@ def drop_tables(cur, conn):
             print(e)
 
 
-def create_tables(cur, conn):
-    """Creates all tables defined in `sql_queries.create_table_queries`.
-
-    Args:
-        cur (psycopg2.cursor): A database cursor
-        conn (psycopg2.connection): A database connection
-    """
-    for query in create_table_queries:
-        try:
-            cur.execute(query)
-            conn.commit()
-        except psycopg2.Error as e:
-            print("Error: Could not create table from query: {}".format(query))
-            print(e)
-
-
 def main():
     """
     Performing following actions:
     1) Creating database.
-    2) Droping tables if exists.
+    2) Dropping tables if exists.
     3) Creating tables.
     4) Closing cursor and connection.
     """
 
     cur, conn = create_database()
-
     drop_tables(cur, conn)
-    # create_tables(cur, conn)
-
     cur.close();
     conn.close()
 
