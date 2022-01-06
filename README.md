@@ -3,11 +3,10 @@
 ============
 
 AWS Glue is a service for performing ETL tasks.
-It is not programming free, but it simplifies work of Data Engineer.
 There are four main components of AWS Glue:
 1. Crawler - build metadata for store and connectors.
 2. AWS Catalog - metadata store.
-3. Visual editor - much of the work for inserting data to into staging area has been done using this product.
+3. AWS Glue Studio - much of the work for inserting data to into staging area has been done using this product.
 4. ETL Jobs - that generates code. You need to adapt it to fit your needs, but it removes a lot
 of boilerplate coding.
 
@@ -20,11 +19,48 @@ learning how `awsglue` Python library work before saying that it is overly compl
 AWS Glue Python library is wrapper around Apache Spark.
 In order to access low level functions you need to convert it to Apache Spark DataFrame, make transforms
 and then convert it back to DynamicFrame.
+
+AWD DataBrew is a product aimed to simplify life of data scientists and data engineers in performing data 
+quality checks and data cleaning operations.
+
 ---
 
+## Motivation
+### Product
+There are three main products that I considered before executing project:
+1. Apache Spark
+2. Apache Airflow
+3. AWS Glue
+
+#### Apache Spark
+Pluses:
+- RDD is an effective mechanism for working with big datasets
+- SQL engine and Dataset abstractions for performing data analytics and ETL
+Minuses:
+- No bash operators
+
+#### Apache Airflow
+Pluses:
+- Written in Python
+- Variety of built-in operators
+Minuses:
+- No analytics engine
+
+#### AWS Glue
+Pluses:
+- Cost-effective
+- Code generation support
+- Clear documentation
+- Ability to adapt generated code
+Minuses:
+- Performing rare low level operations can be complicated
+
+
+
 ## Features
-- AWS Glue support
 - AWS Athena support
+- AWS Glue support
+- AWS Glue DataBrew support
 
 ---
 
