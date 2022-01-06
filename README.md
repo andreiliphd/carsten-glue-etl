@@ -84,6 +84,8 @@ git@github.com:andreiliphd/carsten-glue-etl.git
 
 `data/` - datasets
 
+`scripts/` - ETL scripts
+
 ---
 
 
