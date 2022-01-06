@@ -1,0 +1,32 @@
+{
+  "sampleSize": 2891,
+  "rulesetResults": [
+    {
+      "name": "dq-state-codes",
+      "description": "Checking state_codes table.",
+      "arn": "arn:aws:databrew:eu-north-1:047747820233:ruleset/dq-state-codes",
+      "lastModifiedDate": "Thu Jan 06 09:02:52 UTC 2022",
+      "ruleResults": [
+        {
+          "name": "number_of_rows_check",
+          "definition": {
+            "Name": "number_of_rows_check",
+            "Disabled": false,
+            "CheckExpression": "AGG(ROWS_COUNT) == :val1",
+            "SubstitutionMap": {
+              ":val1": "2891"
+            }
+          },
+          "status": "SUCCEEDED"
+        }
+      ],
+      "status": "SUCCEEDED"
+    }
+  ],
+  "jobName": "state-codes profile job",
+  "jobRunId": "db_7e9ad332a45e3b174b68c634396d762cf206ce2f04706e6a31b9f750121c91ad",
+  "location": "s3://andreiliphd-glue-output/state-codes_7e9ad332a45e3b174b68c634396d762cf206ce2f04706e6a31b9f750121c91ad_dq-validation-report.json",
+  "startedOn": "2022-01-06T09:05:44.010067",
+  "writtenOn": "2022-01-06T09:07:06.694416",
+  "version": "1.0"
+}

@@ -1,0 +1,3761 @@
+{
+  "defaultProfileConfiguration": {
+    "datasetConfiguration": {
+      "includedStatistics": [
+        "DUPLICATE_ROWS_COUNT",
+        "CORRELATION"
+      ],
+      "parameters": {
+        "CORRELATION": {
+          "columnNumber": "10"
+        }
+      }
+    },
+    "columnConfiguration": {
+      "booleanColumn": {
+        "includedStatistics": [
+          "MOST_COMMON_VALUES",
+          "MISSING_VALUES_COUNT",
+          "ENTROPY",
+          "UNIQUE_VALUES_COUNT",
+          "DISTINCT_VALUES_COUNT"
+        ],
+        "parameters": {
+          "MOST_COMMON_VALUES": {
+            "sampleSize": "50"
+          }
+        }
+      },
+      "stringColumn": {
+        "includedStatistics": [
+          "MODE",
+          "MOST_COMMON_VALUES",
+          "MIN",
+          "VALUE_DISTRIBUTION",
+          "MISSING_VALUES_COUNT",
+          "ENTROPY",
+          "UNIQUE_VALUES_COUNT",
+          "MEDIAN",
+          "OUTLIER_DETECTION",
+          "MEAN",
+          "STANDARD_DEVIATION",
+          "MAX",
+          "DISTINCT_VALUES_COUNT"
+        ],
+        "parameters": {
+          "MOST_COMMON_VALUES": {
+            "sampleSize": "50"
+          },
+          "OUTLIER_DETECTION": {
+            "threshold": "3",
+            "sampleSize": "50"
+          },
+          "VALUE_DISTRIBUTION": {
+            "binNumber": "20"
+          }
+        }
+      },
+      "numericColumn": {
+        "includedStatistics": [
+          "MEDIAN_ABSOLUTE_DEVIATION",
+          "RANGE",
+          "MEDIAN",
+          "SKEWNESS",
+          "MEAN",
+          "ZEROS_COUNT",
+          "OUTLIER_DETECTION",
+          "ENTROPY",
+          "SUM",
+          "INTER_QUARTILE_RANGE",
+          "DISTINCT_VALUES_COUNT",
+          "MAXIMUM_VALUES",
+          "MISSING_VALUES_COUNT",
+          "PERCENTILES",
+          "MINIMUM_VALUES",
+          "Z_SCORE_DISTRIBUTION",
+          "UNIQUE_VALUES_COUNT",
+          "MOST_COMMON_VALUES",
+          "MIN",
+          "VALUE_DISTRIBUTION",
+          "KURTOSIS",
+          "VARIANCE",
+          "STANDARD_DEVIATION",
+          "MAX",
+          "MODE"
+        ],
+        "parameters": {
+          "MOST_COMMON_VALUES": {
+            "sampleSize": "50"
+          },
+          "MINIMUM_VALUES": {
+            "sampleSize": "5"
+          },
+          "MAXIMUM_VALUES": {
+            "sampleSize": "5"
+          },
+          "OUTLIER_DETECTION": {
+            "threshold": "3",
+            "sampleSize": "50"
+          },
+          "VALUE_DISTRIBUTION": {
+            "binNumber": "20"
+          },
+          "Z_SCORE_DISTRIBUTION": {
+            "binNumber": "20"
+          }
+        }
+      }
+    }
+  },
+  "datasetConfigurationOverride": {},
+  "sampleSize": 9189,
+  "duplicateRowsCount": 0,
+  "columns": [
+    {
+      "name": "gps_code",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 8520,
+      "uniqueValuesCount": 8501,
+      "entropy": 8.663865277415896,
+      "mostCommonValues": [
+        {
+          "value": "",
+          "count": 651
+        },
+        {
+          "value": "ZYMH",
+          "count": 3
+        },
+        {
+          "value": "EDDM",
+          "count": 2
+        },
+        {
+          "value": "OPSW",
+          "count": 2
+        },
+        {
+          "value": "KAUS",
+          "count": 2
+        },
+        {
+          "value": "ETIE",
+          "count": 2
+        },
+        {
+          "value": "YRTI",
+          "count": 2
+        },
+        {
+          "value": "SBZM",
+          "count": 2
+        },
+        {
+          "value": "ZSYA",
+          "count": 2
+        },
+        {
+          "value": "SVCE",
+          "count": 2
+        },
+        {
+          "value": "EDDB",
+          "count": 2
+        },
+        {
+          "value": "RPLS",
+          "count": 2
+        },
+        {
+          "value": "HUPA",
+          "count": 2
+        },
+        {
+          "value": "WARU",
+          "count": 2
+        },
+        {
+          "value": "FAOR",
+          "count": 2
+        },
+        {
+          "value": "MMPL",
+          "count": 2
+        },
+        {
+          "value": "VORG",
+          "count": 2
+        },
+        {
+          "value": "RJOK",
+          "count": 2
+        },
+        {
+          "value": "YLZI",
+          "count": 2
+        },
+        {
+          "value": "BIBD",
+          "count": 1
+        },
+        {
+          "value": "DFEA",
+          "count": 1
+        },
+        {
+          "value": "YMVG",
+          "count": 1
+        },
+        {
+          "value": "AYMP",
+          "count": 1
+        },
+        {
+          "value": "ZBYC",
+          "count": 1
+        },
+        {
+          "value": "LEIB",
+          "count": 1
+        },
+        {
+          "value": "PAST",
+          "count": 1
+        },
+        {
+          "value": "HTAR",
+          "count": 1
+        },
+        {
+          "value": "KCUH",
+          "count": 1
+        },
+        {
+          "value": "RKNY",
+          "count": 1
+        },
+        {
+          "value": "YAGD",
+          "count": 1
+        },
+        {
+          "value": "EGSH",
+          "count": 1
+        },
+        {
+          "value": "OBBI",
+          "count": 1
+        },
+        {
+          "value": "CAX6",
+          "count": 1
+        },
+        {
+          "value": "YBMD",
+          "count": 1
+        },
+        {
+          "value": "KAPA",
+          "count": 1
+        },
+        {
+          "value": "FHSH",
+          "count": 1
+        },
+        {
+          "value": "SBHT",
+          "count": 1
+        },
+        {
+          "value": "HSFS",
+          "count": 1
+        },
+        {
+          "value": "WBGP",
+          "count": 1
+        },
+        {
+          "value": "HRYI",
+          "count": 1
+        },
+        {
+          "value": "LTBI",
+          "count": 1
+        },
+        {
+          "value": "BIOF",
+          "count": 1
+        },
+        {
+          "value": "SWUA",
+          "count": 1
+        },
+        {
+          "value": "NZWK",
+          "count": 1
+        },
+        {
+          "value": "SNBX",
+          "count": 1
+        },
+        {
+          "value": "NFCS",
+          "count": 1
+        },
+        {
+          "value": "KBEC",
+          "count": 1
+        },
+        {
+          "value": "HYL",
+          "count": 1
+        },
+        {
+          "value": "KSKA",
+          "count": 1
+        },
+        {
+          "value": "KAXS",
+          "count": 1
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 4,
+      "mean": 3.698552617259767,
+      "min": 0,
+      "standardDeviation": 1.0299704945354395,
+      "median": 4.0,
+      "mode": 4,
+      "valueDistribution": [
+        {
+          "bucket": [
+            0,
+            1
+          ],
+          "count": 651
+        },
+        {
+          "bucket": [
+            1,
+            2
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            2,
+            3
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            3,
+            4
+          ],
+          "count": 166
+        },
+        {
+          "bucket": [
+            4,
+            "inf"
+          ],
+          "count": 8372
+        }
+      ],
+      "zScoreOutliersCount": 651,
+      "zScoreOutliersSample": [
+        {
+          "value": 0,
+          "zScore": -3.5909306498415487
+        }
+      ]
+    },
+    {
+      "name": "coordinates",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 9163,
+      "uniqueValuesCount": 9141,
+      "entropy": 9.121424302302605,
+      "mostCommonValues": [
+        {
+          "value": "0, 0",
+          "count": 6
+        },
+        {
+          "value": "28.246, -26.1392",
+          "count": 2
+        },
+        {
+          "value": "-109.535826, 23.575011",
+          "count": 2
+        },
+        {
+          "value": "-12.9166, 27.9487",
+          "count": 2
+        },
+        {
+          "value": "131.649993896, -25.860000610399997",
+          "count": 2
+        },
+        {
+          "value": "131.548995972, -17.607000351",
+          "count": 2
+        },
+        {
+          "value": "145.454571, -14.673273",
+          "count": 2
+        },
+        {
+          "value": "135.199005127, -22.444000244099996",
+          "count": 2
+        },
+        {
+          "value": "124.851997375, -18.4946994781",
+          "count": 2
+        },
+        {
+          "value": "142.675003052, -12.6591997147",
+          "count": 2
+        },
+        {
+          "value": "110.47838, -5.80091",
+          "count": 2
+        },
+        {
+          "value": "143.145996094, -16.4244003296",
+          "count": 2
+        },
+        {
+          "value": "120.702003479, -20.8442001343",
+          "count": 2
+        },
+        {
+          "value": "149.729166667, -9.984166666669998",
+          "count": 2
+        },
+        {
+          "value": "144.169006348, -17.388299942",
+          "count": 2
+        },
+        {
+          "value": "79.3923, 18.701",
+          "count": 2
+        },
+        {
+          "value": "179.259166667, 51.3777777778",
+          "count": 2
+        },
+        {
+          "value": "148.755, -20.27611",
+          "count": 2
+        },
+        {
+          "value": "142.57699585, -11.7369003296",
+          "count": 2
+        },
+        {
+          "value": "145.330001831, -15.8736000061",
+          "count": 2
+        },
+        {
+          "value": "133.7363, 45.8783",
+          "count": 2
+        },
+        {
+          "value": "142.438995361, -15.888600349399999",
+          "count": 2
+        },
+        {
+          "value": "36.40140151977539, 45.372501373291016",
+          "count": 1
+        },
+        {
+          "value": "97.2869, 3.1707",
+          "count": 1
+        },
+        {
+          "value": "119.889, -8.48666",
+          "count": 1
+        },
+        {
+          "value": "73.4520034790039, 33.96099853515625",
+          "count": 1
+        },
+        {
+          "value": "82.29419708251953, 28.111099243164062",
+          "count": 1
+        },
+        {
+          "value": "100.71700286865, 4.8670001029968",
+          "count": 1
+        },
+        {
+          "value": "148.5591, -9.5162",
+          "count": 1
+        },
+        {
+          "value": "112.714996338, -7.926559925079999",
+          "count": 1
+        },
+        {
+          "value": "-74.8836, 5.21256",
+          "count": 1
+        },
+        {
+          "value": "-108.730003357, 42.8152008057",
+          "count": 1
+        },
+        {
+          "value": "155.712442, -6.527493",
+          "count": 1
+        },
+        {
+          "value": "-145.727005005, 60.5438995361",
+          "count": 1
+        },
+        {
+          "value": "-134.585007, 57.503601",
+          "count": 1
+        },
+        {
+          "value": "174.787872434, -36.846525628100004",
+          "count": 1
+        },
+        {
+          "value": "-61.184399, 55.913898",
+          "count": 1
+        },
+        {
+          "value": "-84.4288024902, 41.3375015259",
+          "count": 1
+        },
+        {
+          "value": "-115.672996521, 36.587200164799995",
+          "count": 1
+        },
+        {
+          "value": "28.66489982605, -12.998100280762",
+          "count": 1
+        },
+        {
+          "value": "-67.885902, 46.950401",
+          "count": 1
+        },
+        {
+          "value": "-51.79690170288086, 3.85548996925354",
+          "count": 1
+        },
+        {
+          "value": "140.8838, -3.67565",
+          "count": 1
+        },
+        {
+          "value": "102.56500244140625, 58.13610076904297",
+          "count": 1
+        },
+        {
+          "value": "-58.318026, -26.881224",
+          "count": 1
+        },
+        {
+          "value": "34.93579864501953, 29.94029998779297",
+          "count": 1
+        },
+        {
+          "value": "113.67174, -24.880211",
+          "count": 1
+        },
+        {
+          "value": "10.674076080322266, -3.4584197998046875",
+          "count": 1
+        },
+        {
+          "value": "-98.04609680175781, 54.51890182495117",
+          "count": 1
+        },
+        {
+          "value": "-16.3414993286, 28.4827003479",
+          "count": 1
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 41,
+      "mean": 29.53694634889542,
+      "min": 4,
+      "standardDeviation": 7.811090668455918,
+      "median": 31.0,
+      "mode": 38,
+      "valueDistribution": [
+        {
+          "bucket": [
+            4,
+            5
+          ],
+          "count": 6
+        },
+        {
+          "bucket": [
+            5,
+            6
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            6,
+            7
+          ],
+          "count": 2
+        },
+        {
+          "bucket": [
+            7,
+            9
+          ],
+          "count": 3
+        },
+        {
+          "bucket": [
+            9,
+            11
+          ],
+          "count": 1
+        },
+        {
+          "bucket": [
+            11,
+            13
+          ],
+          "count": 14
+        },
+        {
+          "bucket": [
+            13,
+            15
+          ],
+          "count": 76
+        },
+        {
+          "bucket": [
+            15,
+            17
+          ],
+          "count": 348
+        },
+        {
+          "bucket": [
+            17,
+            19
+          ],
+          "count": 721
+        },
+        {
+          "bucket": [
+            19,
+            21
+          ],
+          "count": 668
+        },
+        {
+          "bucket": [
+            21,
+            23
+          ],
+          "count": 629
+        },
+        {
+          "bucket": [
+            23,
+            25
+          ],
+          "count": 129
+        },
+        {
+          "bucket": [
+            25,
+            27
+          ],
+          "count": 447
+        },
+        {
+          "bucket": [
+            27,
+            29
+          ],
+          "count": 582
+        },
+        {
+          "bucket": [
+            29,
+            31
+          ],
+          "count": 936
+        },
+        {
+          "bucket": [
+            31,
+            33
+          ],
+          "count": 273
+        },
+        {
+          "bucket": [
+            33,
+            35
+          ],
+          "count": 998
+        },
+        {
+          "bucket": [
+            35,
+            37
+          ],
+          "count": 580
+        },
+        {
+          "bucket": [
+            37,
+            39
+          ],
+          "count": 2135
+        },
+        {
+          "bucket": [
+            39,
+            "inf"
+          ],
+          "count": 641
+        }
+      ],
+      "zScoreOutliersCount": 8,
+      "zScoreOutliersSample": [
+        {
+          "value": 4,
+          "zScore": -3.2693188996029816
+        },
+        {
+          "value": 6,
+          "zScore": -3.013272710294651
+        }
+      ]
+    },
+    {
+      "name": "iata_code",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 9042,
+      "uniqueValuesCount": 8975,
+      "entropy": 9.07723952645989,
+      "mostCommonValues": [
+        {
+          "value": "0",
+          "count": 80
+        },
+        {
+          "value": "OHE",
+          "count": 3
+        },
+        {
+          "value": "PRI",
+          "count": 3
+        },
+        {
+          "value": "YMX",
+          "count": 2
+        },
+        {
+          "value": "LZR",
+          "count": 2
+        },
+        {
+          "value": "AUS",
+          "count": 2
+        },
+        {
+          "value": "BVW",
+          "count": 2
+        },
+        {
+          "value": "YTY",
+          "count": 2
+        },
+        {
+          "value": "RCH",
+          "count": 2
+        },
+        {
+          "value": "LMC",
+          "count": 2
+        },
+        {
+          "value": "VQS",
+          "count": 2
+        },
+        {
+          "value": "HIG",
+          "count": 2
+        },
+        {
+          "value": "REQ",
+          "count": 2
+        },
+        {
+          "value": "WSY",
+          "count": 2
+        },
+        {
+          "value": "ZRH",
+          "count": 2
+        },
+        {
+          "value": "KYF",
+          "count": 2
+        },
+        {
+          "value": "MUP",
+          "count": 2
+        },
+        {
+          "value": "KOH",
+          "count": 2
+        },
+        {
+          "value": "CLG",
+          "count": 2
+        },
+        {
+          "value": "LHG",
+          "count": 2
+        },
+        {
+          "value": "SGL",
+          "count": 2
+        },
+        {
+          "value": "SVD",
+          "count": 2
+        },
+        {
+          "value": "KMM",
+          "count": 2
+        },
+        {
+          "value": "TFY",
+          "count": 2
+        },
+        {
+          "value": "CSZ",
+          "count": 2
+        },
+        {
+          "value": "DZI",
+          "count": 2
+        },
+        {
+          "value": "PAF",
+          "count": 2
+        },
+        {
+          "value": "PRM",
+          "count": 2
+        },
+        {
+          "value": "GGC",
+          "count": 2
+        },
+        {
+          "value": "ZRZ",
+          "count": 2
+        },
+        {
+          "value": "MNW",
+          "count": 2
+        },
+        {
+          "value": "BCK",
+          "count": 2
+        },
+        {
+          "value": "RZS",
+          "count": 2
+        },
+        {
+          "value": "GVA",
+          "count": 2
+        },
+        {
+          "value": "SHO",
+          "count": 2
+        },
+        {
+          "value": "JNB",
+          "count": 2
+        },
+        {
+          "value": "MPT",
+          "count": 2
+        },
+        {
+          "value": "RTI",
+          "count": 2
+        },
+        {
+          "value": "MRE",
+          "count": 2
+        },
+        {
+          "value": "CQP",
+          "count": 2
+        },
+        {
+          "value": "NWT",
+          "count": 2
+        },
+        {
+          "value": "CMN",
+          "count": 2
+        },
+        {
+          "value": "IST",
+          "count": 2
+        },
+        {
+          "value": "PCO",
+          "count": 2
+        },
+        {
+          "value": "NKB",
+          "count": 2
+        },
+        {
+          "value": "ESP",
+          "count": 2
+        },
+        {
+          "value": "CTR",
+          "count": 2
+        },
+        {
+          "value": "HLA",
+          "count": 2
+        },
+        {
+          "value": "DLR",
+          "count": 2
+        },
+        {
+          "value": "MXR",
+          "count": 2
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 3,
+      "mean": 2.9823702252693436,
+      "min": 1,
+      "standardDeviation": 0.18695599546898012,
+      "median": 3.0,
+      "mode": 3,
+      "valueDistribution": [
+        {
+          "bucket": [
+            1,
+            2
+          ],
+          "count": 81
+        },
+        {
+          "bucket": [
+            2,
+            3
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            3,
+            "inf"
+          ],
+          "count": 9108
+        }
+      ],
+      "zScoreOutliersCount": 81,
+      "zScoreOutliersSample": [
+        {
+          "value": 1,
+          "zScore": -10.603405471413513
+        }
+      ]
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 6,
+      "uniqueValuesCount": 0,
+      "entropy": 1.1070383486393132,
+      "mostCommonValues": [
+        {
+          "value": "small_airport",
+          "count": 4238
+        },
+        {
+          "value": "medium_airport",
+          "count": 3859
+        },
+        {
+          "value": "large_airport",
+          "count": 602
+        },
+        {
+          "value": "closed",
+          "count": 279
+        },
+        {
+          "value": "seaplane_base",
+          "count": 143
+        },
+        {
+          "value": "heliport",
+          "count": 68
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 14,
+      "mean": 13.170421155729677,
+      "min": 6,
+      "standardDeviation": 1.4366282717750318,
+      "median": 13.0,
+      "mode": 13,
+      "valueDistribution": [
+        {
+          "bucket": [
+            6,
+            7
+          ],
+          "count": 279
+        },
+        {
+          "bucket": [
+            7,
+            8
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            8,
+            9
+          ],
+          "count": 68
+        },
+        {
+          "bucket": [
+            9,
+            10
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            10,
+            11
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            11,
+            12
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            12,
+            13
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            13,
+            14
+          ],
+          "count": 4983
+        },
+        {
+          "bucket": [
+            14,
+            "inf"
+          ],
+          "count": 3859
+        }
+      ],
+      "zScoreOutliersCount": 347,
+      "zScoreOutliersSample": [
+        {
+          "value": 6,
+          "zScore": -4.991145793664658
+        },
+        {
+          "value": 8,
+          "zScore": -3.59899721960876
+        }
+      ]
+    },
+    {
+      "name": "local_code",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 2901,
+      "uniqueValuesCount": 2817,
+      "entropy": 3.218432558294849,
+      "mostCommonValues": [
+        {
+          "value": "",
+          "count": 6202
+        },
+        {
+          "value": "APA",
+          "count": 3
+        },
+        {
+          "value": "SLR",
+          "count": 3
+        },
+        {
+          "value": "GRN",
+          "count": 3
+        },
+        {
+          "value": "GPI",
+          "count": 3
+        },
+        {
+          "value": "TAD",
+          "count": 2
+        },
+        {
+          "value": "SSI",
+          "count": 2
+        },
+        {
+          "value": "PGA",
+          "count": 2
+        },
+        {
+          "value": "CHP",
+          "count": 2
+        },
+        {
+          "value": "PAL",
+          "count": 2
+        },
+        {
+          "value": "WSM",
+          "count": 2
+        },
+        {
+          "value": "AUN",
+          "count": 2
+        },
+        {
+          "value": "OSA",
+          "count": 2
+        },
+        {
+          "value": "PAM",
+          "count": 2
+        },
+        {
+          "value": "SJU",
+          "count": 2
+        },
+        {
+          "value": "CVH",
+          "count": 2
+        },
+        {
+          "value": "BLI",
+          "count": 2
+        },
+        {
+          "value": "MRI",
+          "count": 2
+        },
+        {
+          "value": "HLA",
+          "count": 2
+        },
+        {
+          "value": "HFD",
+          "count": 2
+        },
+        {
+          "value": "ADK",
+          "count": 2
+        },
+        {
+          "value": "COF",
+          "count": 2
+        },
+        {
+          "value": "SUA",
+          "count": 2
+        },
+        {
+          "value": "CVG",
+          "count": 2
+        },
+        {
+          "value": "TRB",
+          "count": 2
+        },
+        {
+          "value": "CRC",
+          "count": 2
+        },
+        {
+          "value": "BAM",
+          "count": 2
+        },
+        {
+          "value": "MLU",
+          "count": 2
+        },
+        {
+          "value": "RMG",
+          "count": 2
+        },
+        {
+          "value": "BOG",
+          "count": 2
+        },
+        {
+          "value": "HTZ",
+          "count": 2
+        },
+        {
+          "value": "MMU",
+          "count": 2
+        },
+        {
+          "value": "TRK",
+          "count": 2
+        },
+        {
+          "value": "NTA",
+          "count": 2
+        },
+        {
+          "value": "ASE",
+          "count": 2
+        },
+        {
+          "value": "FUL",
+          "count": 2
+        },
+        {
+          "value": "CPR",
+          "count": 2
+        },
+        {
+          "value": "GSP",
+          "count": 2
+        },
+        {
+          "value": "ARA",
+          "count": 2
+        },
+        {
+          "value": "HWO",
+          "count": 2
+        },
+        {
+          "value": "TEB",
+          "count": 2
+        },
+        {
+          "value": "CAO",
+          "count": 2
+        },
+        {
+          "value": "STK",
+          "count": 2
+        },
+        {
+          "value": "KWT",
+          "count": 2
+        },
+        {
+          "value": "AIO",
+          "count": 2
+        },
+        {
+          "value": "PSO",
+          "count": 2
+        },
+        {
+          "value": "GUP",
+          "count": 2
+        },
+        {
+          "value": "FRR",
+          "count": 2
+        },
+        {
+          "value": "CCB",
+          "count": 2
+        },
+        {
+          "value": "GAI",
+          "count": 2
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 6,
+      "mean": 1.0247034497769072,
+      "min": 0,
+      "standardDeviation": 1.4913548694515961,
+      "median": 0.0,
+      "mode": 0,
+      "valueDistribution": [
+        {
+          "bucket": [
+            0,
+            1
+          ],
+          "count": 6202
+        },
+        {
+          "bucket": [
+            1,
+            2
+          ],
+          "count": 1
+        },
+        {
+          "bucket": [
+            2,
+            3
+          ],
+          "count": 1
+        },
+        {
+          "bucket": [
+            3,
+            4
+          ],
+          "count": 2530
+        },
+        {
+          "bucket": [
+            4,
+            5
+          ],
+          "count": 453
+        },
+        {
+          "bucket": [
+            5,
+            6
+          ],
+          "count": 1
+        },
+        {
+          "bucket": [
+            6,
+            "inf"
+          ],
+          "count": 1
+        }
+      ],
+      "zScoreOutliersCount": 1,
+      "zScoreOutliersSample": [
+        {
+          "value": 6,
+          "zScore": 3.336091665461634
+        }
+      ]
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 9109,
+      "uniqueValuesCount": 9037,
+      "entropy": 9.113163730772731,
+      "mostCommonValues": [
+        {
+          "value": "Santa Maria Airport",
+          "count": 4
+        },
+        {
+          "value": "San Pedro Airport",
+          "count": 4
+        },
+        {
+          "value": "Capital City Airport",
+          "count": 3
+        },
+        {
+          "value": "Santa Ana Airport",
+          "count": 3
+        },
+        {
+          "value": "Newcastle Airport",
+          "count": 3
+        },
+        {
+          "value": "San Fernando Airport",
+          "count": 3
+        },
+        {
+          "value": "OR Tambo International Airport",
+          "count": 2
+        },
+        {
+          "value": "Hughes Airport",
+          "count": 2
+        },
+        {
+          "value": "La Primavera Airport",
+          "count": 2
+        },
+        {
+          "value": "Bali Airport",
+          "count": 2
+        },
+        {
+          "value": "Lumbala Airport",
+          "count": 2
+        },
+        {
+          "value": "Dabo Airport",
+          "count": 2
+        },
+        {
+          "value": "Mendi Airport",
+          "count": 2
+        },
+        {
+          "value": "Melbourne International Airport",
+          "count": 2
+        },
+        {
+          "value": "Dalnerechensk Airport",
+          "count": 2
+        },
+        {
+          "value": "Santa Cruz Airport",
+          "count": 2
+        },
+        {
+          "value": "Kiunga Airport",
+          "count": 2
+        },
+        {
+          "value": "Airport",
+          "count": 2
+        },
+        {
+          "value": "[Duplicate] Praslin Island Airport",
+          "count": 2
+        },
+        {
+          "value": "Ceres Airport",
+          "count": 2
+        },
+        {
+          "value": "Lawrence Municipal Airport",
+          "count": 2
+        },
+        {
+          "value": "Plymouth Municipal Airport",
+          "count": 2
+        },
+        {
+          "value": "Nogales International Airport",
+          "count": 2
+        },
+        {
+          "value": "Punta Colorada Airport",
+          "count": 2
+        },
+        {
+          "value": "Madison Municipal Airport",
+          "count": 2
+        },
+        {
+          "value": "Sim\u00c3\u00b3n Bol\u00c3\u00advar International Airport",
+          "count": 2
+        },
+        {
+          "value": "Pemba Airport",
+          "count": 2
+        },
+        {
+          "value": "Moyale Airport",
+          "count": 2
+        },
+        {
+          "value": "Santa Terezinha Airport",
+          "count": 2
+        },
+        {
+          "value": "[Duplicate] Gu-Lian Airport",
+          "count": 2
+        },
+        {
+          "value": "Yangzhou Taizhou Airport",
+          "count": 2
+        },
+        {
+          "value": "Wau Airport",
+          "count": 2
+        },
+        {
+          "value": "St George Airport",
+          "count": 2
+        },
+        {
+          "value": "Puerto Rico Airport",
+          "count": 2
+        },
+        {
+          "value": "Pope Field",
+          "count": 2
+        },
+        {
+          "value": "Bathurst Airport",
+          "count": 2
+        },
+        {
+          "value": "El Dorado Airport",
+          "count": 2
+        },
+        {
+          "value": "Springvale Airport",
+          "count": 2
+        },
+        {
+          "value": "Las Brujas Airport",
+          "count": 2
+        },
+        {
+          "value": "Faro Airport",
+          "count": 2
+        },
+        {
+          "value": "Queenstown Airport",
+          "count": 2
+        },
+        {
+          "value": "Amchitka Army Airfield",
+          "count": 2
+        },
+        {
+          "value": "Southport Airport",
+          "count": 2
+        },
+        {
+          "value": "Marion Municipal Airport",
+          "count": 2
+        },
+        {
+          "value": "Las Flores Airport",
+          "count": 2
+        },
+        {
+          "value": "Taylor Airport",
+          "count": 2
+        },
+        {
+          "value": "Grant County Airport",
+          "count": 2
+        },
+        {
+          "value": "Mae Hong Son Airport",
+          "count": 2
+        },
+        {
+          "value": "Danilo Atienza Air Base",
+          "count": 2
+        },
+        {
+          "value": "Terrace Bay Airport",
+          "count": 2
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 90,
+      "mean": 21.429317662422463,
+      "min": 3,
+      "standardDeviation": 8.329634991551792,
+      "median": 19.0,
+      "mode": 14,
+      "valueDistribution": [
+        {
+          "bucket": [
+            3,
+            7
+          ],
+          "count": 5
+        },
+        {
+          "bucket": [
+            7,
+            11
+          ],
+          "count": 26
+        },
+        {
+          "bucket": [
+            11,
+            15
+          ],
+          "count": 1717
+        },
+        {
+          "bucket": [
+            15,
+            19
+          ],
+          "count": 2691
+        },
+        {
+          "bucket": [
+            19,
+            23
+          ],
+          "count": 1532
+        },
+        {
+          "bucket": [
+            23,
+            27
+          ],
+          "count": 1078
+        },
+        {
+          "bucket": [
+            27,
+            31
+          ],
+          "count": 865
+        },
+        {
+          "bucket": [
+            31,
+            35
+          ],
+          "count": 528
+        },
+        {
+          "bucket": [
+            35,
+            39
+          ],
+          "count": 301
+        },
+        {
+          "bucket": [
+            39,
+            43
+          ],
+          "count": 196
+        },
+        {
+          "bucket": [
+            43,
+            47
+          ],
+          "count": 127
+        },
+        {
+          "bucket": [
+            47,
+            51
+          ],
+          "count": 60
+        },
+        {
+          "bucket": [
+            51,
+            55
+          ],
+          "count": 37
+        },
+        {
+          "bucket": [
+            55,
+            60
+          ],
+          "count": 18
+        },
+        {
+          "bucket": [
+            60,
+            65
+          ],
+          "count": 6
+        },
+        {
+          "bucket": [
+            65,
+            70
+          ],
+          "count": 1
+        },
+        {
+          "bucket": [
+            70,
+            75
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            75,
+            80
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            80,
+            85
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            85,
+            "inf"
+          ],
+          "count": 1
+        }
+      ],
+      "zScoreOutliersCount": 123,
+      "zScoreOutliersSample": [
+        {
+          "value": 90,
+          "zScore": 8.232135310505722
+        },
+        {
+          "value": 66,
+          "zScore": 5.350856596091267
+        },
+        {
+          "value": 63,
+          "zScore": 4.990696756789461
+        },
+        {
+          "value": 61,
+          "zScore": 4.750590197254923
+        },
+        {
+          "value": 60,
+          "zScore": 4.630536917487654
+        },
+        {
+          "value": 59,
+          "zScore": 4.510483637720385
+        },
+        {
+          "value": 58,
+          "zScore": 4.390430357953116
+        },
+        {
+          "value": 57,
+          "zScore": 4.270377078185847
+        },
+        {
+          "value": 56,
+          "zScore": 4.150323798418579
+        },
+        {
+          "value": 55,
+          "zScore": 4.030270518651309
+        },
+        {
+          "value": 54,
+          "zScore": 3.9102172388840404
+        },
+        {
+          "value": 53,
+          "zScore": 3.7901639591167715
+        },
+        {
+          "value": 52,
+          "zScore": 3.6701106793495026
+        },
+        {
+          "value": 51,
+          "zScore": 3.5500573995822338
+        },
+        {
+          "value": 50,
+          "zScore": 3.430004119814965
+        },
+        {
+          "value": 49,
+          "zScore": 3.309950840047696
+        },
+        {
+          "value": 48,
+          "zScore": 3.189897560280427
+        },
+        {
+          "value": 47,
+          "zScore": 3.0698442805131583
+        }
+      ]
+    },
+    {
+      "name": "municipality",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 7728,
+      "uniqueValuesCount": 7255,
+      "entropy": 8.44835677227236,
+      "mostCommonValues": [
+        {
+          "value": "",
+          "count": 766
+        },
+        {
+          "value": "Houston",
+          "count": 9
+        },
+        {
+          "value": "London",
+          "count": 9
+        },
+        {
+          "value": "Greenville",
+          "count": 8
+        },
+        {
+          "value": "Jacksonville",
+          "count": 8
+        },
+        {
+          "value": "Columbus",
+          "count": 7
+        },
+        {
+          "value": "Washington",
+          "count": 7
+        },
+        {
+          "value": "Moscow",
+          "count": 7
+        },
+        {
+          "value": "New York",
+          "count": 7
+        },
+        {
+          "value": "San Jose",
+          "count": 6
+        },
+        {
+          "value": "Los Angeles",
+          "count": 5
+        },
+        {
+          "value": "Sydney",
+          "count": 5
+        },
+        {
+          "value": "Sacramento",
+          "count": 5
+        },
+        {
+          "value": "Paris",
+          "count": 5
+        },
+        {
+          "value": "Las Vegas",
+          "count": 5
+        },
+        {
+          "value": "Miami",
+          "count": 5
+        },
+        {
+          "value": "Rome",
+          "count": 5
+        },
+        {
+          "value": "Santiago",
+          "count": 5
+        },
+        {
+          "value": "Alexandria",
+          "count": 5
+        },
+        {
+          "value": "San Diego",
+          "count": 5
+        },
+        {
+          "value": "Madison",
+          "count": 5
+        },
+        {
+          "value": "Colombo",
+          "count": 5
+        },
+        {
+          "value": "Santa Rosa",
+          "count": 5
+        },
+        {
+          "value": "Berlin",
+          "count": 5
+        },
+        {
+          "value": "San Juan",
+          "count": 5
+        },
+        {
+          "value": "Hamilton",
+          "count": 5
+        },
+        {
+          "value": "Jackson",
+          "count": 5
+        },
+        {
+          "value": "Toronto",
+          "count": 4
+        },
+        {
+          "value": "Victoria",
+          "count": 4
+        },
+        {
+          "value": "Melbourne",
+          "count": 4
+        },
+        {
+          "value": "Toledo",
+          "count": 4
+        },
+        {
+          "value": "San Antonio",
+          "count": 4
+        },
+        {
+          "value": "Tampa",
+          "count": 4
+        },
+        {
+          "value": "Marshall",
+          "count": 4
+        },
+        {
+          "value": "Trinidad",
+          "count": 4
+        },
+        {
+          "value": "Johannesburg",
+          "count": 4
+        },
+        {
+          "value": "Eureka",
+          "count": 4
+        },
+        {
+          "value": "Decatur",
+          "count": 4
+        },
+        {
+          "value": "Fayetteville",
+          "count": 4
+        },
+        {
+          "value": "Portland",
+          "count": 4
+        },
+        {
+          "value": "Athens",
+          "count": 4
+        },
+        {
+          "value": "Georgetown",
+          "count": 4
+        },
+        {
+          "value": "Oklahoma City",
+          "count": 4
+        },
+        {
+          "value": "Glasgow",
+          "count": 4
+        },
+        {
+          "value": "Orlando",
+          "count": 4
+        },
+        {
+          "value": "Dayton",
+          "count": 4
+        },
+        {
+          "value": "Plymouth",
+          "count": 4
+        },
+        {
+          "value": "Clinton",
+          "count": 4
+        },
+        {
+          "value": "Jakarta",
+          "count": 4
+        },
+        {
+          "value": "Springfield",
+          "count": 4
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 41,
+      "mean": 8.61062139514637,
+      "min": 0,
+      "standardDeviation": 4.970864211057345,
+      "median": 8.0,
+      "mode": 7,
+      "valueDistribution": [
+        {
+          "bucket": [
+            0,
+            2
+          ],
+          "count": 766
+        },
+        {
+          "bucket": [
+            2,
+            4
+          ],
+          "count": 56
+        },
+        {
+          "bucket": [
+            4,
+            6
+          ],
+          "count": 1016
+        },
+        {
+          "bucket": [
+            6,
+            8
+          ],
+          "count": 2314
+        },
+        {
+          "bucket": [
+            8,
+            10
+          ],
+          "count": 1863
+        },
+        {
+          "bucket": [
+            10,
+            12
+          ],
+          "count": 1270
+        },
+        {
+          "bucket": [
+            12,
+            14
+          ],
+          "count": 758
+        },
+        {
+          "bucket": [
+            14,
+            16
+          ],
+          "count": 415
+        },
+        {
+          "bucket": [
+            16,
+            18
+          ],
+          "count": 219
+        },
+        {
+          "bucket": [
+            18,
+            20
+          ],
+          "count": 172
+        },
+        {
+          "bucket": [
+            20,
+            22
+          ],
+          "count": 131
+        },
+        {
+          "bucket": [
+            22,
+            24
+          ],
+          "count": 83
+        },
+        {
+          "bucket": [
+            24,
+            26
+          ],
+          "count": 52
+        },
+        {
+          "bucket": [
+            26,
+            28
+          ],
+          "count": 26
+        },
+        {
+          "bucket": [
+            28,
+            30
+          ],
+          "count": 17
+        },
+        {
+          "bucket": [
+            30,
+            32
+          ],
+          "count": 11
+        },
+        {
+          "bucket": [
+            32,
+            34
+          ],
+          "count": 8
+        },
+        {
+          "bucket": [
+            34,
+            36
+          ],
+          "count": 4
+        },
+        {
+          "bucket": [
+            36,
+            38
+          ],
+          "count": 4
+        },
+        {
+          "bucket": [
+            38,
+            "inf"
+          ],
+          "count": 4
+        }
+      ],
+      "zScoreOutliersCount": 126,
+      "zScoreOutliersSample": [
+        {
+          "value": 41,
+          "zScore": 6.515844575437344
+        },
+        {
+          "value": 39,
+          "zScore": 6.113500050404626
+        },
+        {
+          "value": 38,
+          "zScore": 5.912327787888268
+        },
+        {
+          "value": 37,
+          "zScore": 5.711155525371909
+        },
+        {
+          "value": 36,
+          "zScore": 5.509983262855551
+        },
+        {
+          "value": 34,
+          "zScore": 5.107638737822833
+        },
+        {
+          "value": 33,
+          "zScore": 4.906466475306474
+        },
+        {
+          "value": 32,
+          "zScore": 4.705294212790116
+        },
+        {
+          "value": 31,
+          "zScore": 4.504121950273757
+        },
+        {
+          "value": 30,
+          "zScore": 4.3029496877573985
+        },
+        {
+          "value": 29,
+          "zScore": 4.10177742524104
+        },
+        {
+          "value": 28,
+          "zScore": 3.9006051627246814
+        },
+        {
+          "value": 27,
+          "zScore": 3.699432900208323
+        },
+        {
+          "value": 26,
+          "zScore": 3.4982606376919643
+        },
+        {
+          "value": 25,
+          "zScore": 3.2970883751756057
+        },
+        {
+          "value": 24,
+          "zScore": 3.095916112659247
+        }
+      ]
+    },
+    {
+      "name": "elevation_ft",
+      "type": "bigint",
+      "correlations": {
+        "elevation_ft": 1.0
+      },
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 2844,
+      "uniqueValuesCount": 1497,
+      "entropy": 7.257326247713621,
+      "mostCommonValues": [
+        {
+          "value": 10,
+          "count": 125
+        },
+        {
+          "value": 20,
+          "count": 86
+        },
+        {
+          "value": 0,
+          "count": 79
+        },
+        {
+          "value": 13,
+          "count": 67
+        },
+        {
+          "value": 15,
+          "count": 63
+        },
+        {
+          "value": 7,
+          "count": 62
+        },
+        {
+          "value": 16,
+          "count": 58
+        },
+        {
+          "value": 30,
+          "count": 55
+        },
+        {
+          "value": 23,
+          "count": 45
+        },
+        {
+          "value": 12,
+          "count": 44
+        },
+        {
+          "value": 33,
+          "count": 43
+        },
+        {
+          "value": 9,
+          "count": 43
+        },
+        {
+          "value": 26,
+          "count": 42
+        },
+        {
+          "value": 50,
+          "count": 41
+        },
+        {
+          "value": 17,
+          "count": 41
+        },
+        {
+          "value": 6,
+          "count": 40
+        },
+        {
+          "value": 8,
+          "count": 39
+        },
+        {
+          "value": 5,
+          "count": 38
+        },
+        {
+          "value": 14,
+          "count": 38
+        },
+        {
+          "value": 39,
+          "count": 37
+        },
+        {
+          "value": 25,
+          "count": 36
+        },
+        {
+          "value": 3,
+          "count": 35
+        },
+        {
+          "value": 18,
+          "count": 35
+        },
+        {
+          "value": 60,
+          "count": 34
+        },
+        {
+          "value": 32,
+          "count": 34
+        },
+        {
+          "value": 19,
+          "count": 34
+        },
+        {
+          "value": 49,
+          "count": 33
+        },
+        {
+          "value": 59,
+          "count": 33
+        },
+        {
+          "value": 24,
+          "count": 32
+        },
+        {
+          "value": 36,
+          "count": 32
+        },
+        {
+          "value": 11,
+          "count": 30
+        },
+        {
+          "value": 52,
+          "count": 29
+        },
+        {
+          "value": 21,
+          "count": 29
+        },
+        {
+          "value": 66,
+          "count": 28
+        },
+        {
+          "value": 22,
+          "count": 27
+        },
+        {
+          "value": 75,
+          "count": 26
+        },
+        {
+          "value": 95,
+          "count": 26
+        },
+        {
+          "value": 40,
+          "count": 26
+        },
+        {
+          "value": 46,
+          "count": 25
+        },
+        {
+          "value": 29,
+          "count": 25
+        },
+        {
+          "value": 82,
+          "count": 25
+        },
+        {
+          "value": 27,
+          "count": 24
+        },
+        {
+          "value": 70,
+          "count": 23
+        },
+        {
+          "value": 90,
+          "count": 23
+        },
+        {
+          "value": 4,
+          "count": 23
+        },
+        {
+          "value": 100,
+          "count": 22
+        },
+        {
+          "value": 28,
+          "count": 22
+        },
+        {
+          "value": 55,
+          "count": 22
+        },
+        {
+          "value": 31,
+          "count": 22
+        },
+        {
+          "value": 45,
+          "count": 22
+        }
+      ],
+      "missingValuesCount": 370,
+      "kurtosis": 7.926480263736444,
+      "max": 14472,
+      "mean": 1146.6716180972899,
+      "min": -1266,
+      "skewness": 2.5014077490912996,
+      "standardDeviation": 1715.6977018420002,
+      "sum": 10112497,
+      "zerosCount": 79,
+      "variance": 2943618.604105921,
+      "range": 15738,
+      "percentile5": 10.0,
+      "percentile25": 72.0,
+      "percentile75": 1421.5,
+      "percentile95": 4990.700000000003,
+      "median": 430.0,
+      "interquartileRange": 1349.5,
+      "mode": 10,
+      "minimumValues": [
+        {
+          "value": null,
+          "count": 370
+        },
+        {
+          "value": -1266,
+          "count": 1
+        },
+        {
+          "value": -210,
+          "count": 1
+        },
+        {
+          "value": -182,
+          "count": 1
+        },
+        {
+          "value": -164,
+          "count": 1
+        }
+      ],
+      "maximumValues": [
+        {
+          "value": 14472,
+          "count": 1
+        },
+        {
+          "value": 14219,
+          "count": 1
+        },
+        {
+          "value": 14042,
+          "count": 1
+        },
+        {
+          "value": 14022,
+          "count": 1
+        },
+        {
+          "value": 13355,
+          "count": 1
+        }
+      ],
+      "valueDistribution": [
+        {
+          "bucket": [
+            -1266,
+            -480
+          ],
+          "count": 1
+        },
+        {
+          "bucket": [
+            -480,
+            306
+          ],
+          "count": 3937
+        },
+        {
+          "bucket": [
+            306,
+            1093
+          ],
+          "count": 2184
+        },
+        {
+          "bucket": [
+            1093,
+            1880
+          ],
+          "count": 978
+        },
+        {
+          "bucket": [
+            1880,
+            2667
+          ],
+          "count": 502
+        },
+        {
+          "bucket": [
+            2667,
+            3454
+          ],
+          "count": 312
+        },
+        {
+          "bucket": [
+            3454,
+            4241
+          ],
+          "count": 281
+        },
+        {
+          "bucket": [
+            4241,
+            5028
+          ],
+          "count": 194
+        },
+        {
+          "bucket": [
+            5028,
+            5815
+          ],
+          "count": 171
+        },
+        {
+          "bucket": [
+            5815,
+            6602
+          ],
+          "count": 100
+        },
+        {
+          "bucket": [
+            6602,
+            7389
+          ],
+          "count": 71
+        },
+        {
+          "bucket": [
+            7389,
+            8176
+          ],
+          "count": 27
+        },
+        {
+          "bucket": [
+            8176,
+            8963
+          ],
+          "count": 19
+        },
+        {
+          "bucket": [
+            8963,
+            9750
+          ],
+          "count": 14
+        },
+        {
+          "bucket": [
+            9750,
+            10537
+          ],
+          "count": 4
+        },
+        {
+          "bucket": [
+            10537,
+            11324
+          ],
+          "count": 8
+        },
+        {
+          "bucket": [
+            11324,
+            12111
+          ],
+          "count": 4
+        },
+        {
+          "bucket": [
+            12111,
+            12898
+          ],
+          "count": 6
+        },
+        {
+          "bucket": [
+            12898,
+            13685
+          ],
+          "count": 2
+        },
+        {
+          "bucket": [
+            13685,
+            "inf"
+          ],
+          "count": 4
+        }
+      ],
+      "zScoreOutliersCount": 189,
+      "zScoreOutliersSample": [
+        {
+          "value": 14472,
+          "zScore": 7.766711098112695
+        },
+        {
+          "value": 14219,
+          "zScore": 7.61924922313998
+        },
+        {
+          "value": 14042,
+          "zScore": 7.516084195985155
+        },
+        {
+          "value": 14022,
+          "zScore": 7.504427130769921
+        },
+        {
+          "value": 13355,
+          "zScore": 7.115664005841853
+        },
+        {
+          "value": 12913,
+          "zScore": 6.8580428645851725
+        },
+        {
+          "value": 12816,
+          "zScore": 6.801506098291286
+        },
+        {
+          "value": 12552,
+          "zScore": 6.647632837450192
+        },
+        {
+          "value": 12468,
+          "zScore": 6.5986731635462075
+        },
+        {
+          "value": 12426,
+          "zScore": 6.574193326594215
+        },
+        {
+          "value": 12400,
+          "zScore": 6.55903914181441
+        },
+        {
+          "value": 12152,
+          "zScore": 6.414491533145504
+        },
+        {
+          "value": 12000,
+          "zScore": 6.325897837509722
+        },
+        {
+          "value": 11713,
+          "zScore": 6.158618951671108
+        },
+        {
+          "value": 11600,
+          "zScore": 6.0927565332050335
+        },
+        {
+          "value": 11327,
+          "zScore": 5.933637593017084
+        },
+        {
+          "value": 11300,
+          "zScore": 5.917900554976518
+        },
+        {
+          "value": 11136,
+          "zScore": 5.822312620211595
+        },
+        {
+          "value": 11034,
+          "zScore": 5.7628615876139
+        },
+        {
+          "value": 11001,
+          "zScore": 5.743627430008763
+        },
+        {
+          "value": 10860,
+          "zScore": 5.6614451202413605
+        },
+        {
+          "value": 10804,
+          "zScore": 5.628805337638704
+        },
+        {
+          "value": 10761,
+          "zScore": 5.603742647425951
+        },
+        {
+          "value": 10682,
+          "zScore": 5.5576972398257745
+        },
+        {
+          "value": 10510,
+          "zScore": 5.4574464789747585
+        },
+        {
+          "value": 9927,
+          "zScore": 5.117643027950676
+        },
+        {
+          "value": 9843,
+          "zScore": 5.068683354046691
+        },
+        {
+          "value": 9765,
+          "zScore": 5.023220799707277
+        },
+        {
+          "value": 9675,
+          "zScore": 4.9707640062387215
+        },
+        {
+          "value": 9649,
+          "zScore": 4.955609821458917
+        },
+        {
+          "value": 9540,
+          "zScore": 4.892078816035889
+        },
+        {
+          "value": 9500,
+          "zScore": 4.868764685605421
+        },
+        {
+          "value": 9380,
+          "zScore": 4.798822294314014
+        },
+        {
+          "value": 9334,
+          "zScore": 4.772011044318976
+        },
+        {
+          "value": 9246,
+          "zScore": 4.720719957371944
+        },
+        {
+          "value": 9205,
+          "zScore": 4.696822973680714
+        },
+        {
+          "value": 9097,
+          "zScore": 4.6338748215184475
+        },
+        {
+          "value": 9092,
+          "zScore": 4.63096055521464
+        },
+        {
+          "value": 9070,
+          "zScore": 4.618137783477882
+        },
+        {
+          "value": 9000,
+          "zScore": 4.577338055224561
+        },
+        {
+          "value": 8980,
+          "zScore": 4.5656809900093265
+        },
+        {
+          "value": 8976,
+          "zScore": 4.56334957696628
+        },
+        {
+          "value": 8917,
+          "zScore": 4.528961234581338
+        },
+        {
+          "value": 8781,
+          "zScore": 4.449693191117745
+        },
+        {
+          "value": 8530,
+          "zScore": 4.3033970226665526
+        },
+        {
+          "value": 8502,
+          "zScore": 4.2870771313652245
+        },
+        {
+          "value": 8490,
+          "zScore": 4.280082892236083
+        },
+        {
+          "value": 8485,
+          "zScore": 4.2771686259322745
+        },
+        {
+          "value": 8466,
+          "zScore": 4.266094413977802
+        },
+        {
+          "value": 8405,
+          "zScore": 4.230540365071337
+        }
+      ],
+      "zScoreDistribution": [
+        {
+          "bucket": [
+            "-inf",
+            -0.9475862888618639
+          ],
+          "count": 1
+        },
+        {
+          "bucket": [
+            -0.9475862888618639,
+            -0.4889390579684661
+          ],
+          "count": 3940
+        },
+        {
+          "bucket": [
+            -0.4889390579684661,
+            -0.03029182707506828
+          ],
+          "count": 2184
+        },
+        {
+          "bucket": [
+            -0.03029182707506828,
+            0.42835540381832954
+          ],
+          "count": 976
+        },
+        {
+          "bucket": [
+            0.42835540381832954,
+            0.8870026347117274
+          ],
+          "count": 502
+        },
+        {
+          "bucket": [
+            0.8870026347117274,
+            1.3456498656051252
+          ],
+          "count": 312
+        },
+        {
+          "bucket": [
+            1.3456498656051252,
+            1.804297096498523
+          ],
+          "count": 280
+        },
+        {
+          "bucket": [
+            1.804297096498523,
+            2.2629443273919208
+          ],
+          "count": 195
+        },
+        {
+          "bucket": [
+            2.2629443273919208,
+            2.721591558285319
+          ],
+          "count": 171
+        },
+        {
+          "bucket": [
+            2.721591558285319,
+            3.1802387891787167
+          ],
+          "count": 99
+        },
+        {
+          "bucket": [
+            3.1802387891787167,
+            3.6388860200721145
+          ],
+          "count": 71
+        },
+        {
+          "bucket": [
+            3.6388860200721145,
+            4.097533250965513
+          ],
+          "count": 27
+        },
+        {
+          "bucket": [
+            4.097533250965513,
+            4.5561804818589104
+          ],
+          "count": 19
+        },
+        {
+          "bucket": [
+            4.5561804818589104,
+            5.014827712752308
+          ],
+          "count": 14
+        },
+        {
+          "bucket": [
+            5.014827712752308,
+            5.473474943645706
+          ],
+          "count": 4
+        },
+        {
+          "bucket": [
+            5.473474943645706,
+            5.932122174539104
+          ],
+          "count": 8
+        },
+        {
+          "bucket": [
+            5.932122174539104,
+            6.3907694054325015
+          ],
+          "count": 4
+        },
+        {
+          "bucket": [
+            6.3907694054325015,
+            6.849416636325899
+          ],
+          "count": 6
+        },
+        {
+          "bucket": [
+            6.849416636325899,
+            7.308063867219297
+          ],
+          "count": 2
+        },
+        {
+          "bucket": [
+            7.308063867219297,
+            "inf"
+          ],
+          "count": 4
+        }
+      ],
+      "medianAbsoluteDeviation": 405.0
+    },
+    {
+      "name": "ident",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 9189,
+      "uniqueValuesCount": 9189,
+      "entropy": 9.125762395500875,
+      "mostCommonValues": [
+        {
+          "value": "UG-OYG",
+          "count": 1
+        },
+        {
+          "value": "VNVT",
+          "count": 1
+        },
+        {
+          "value": "KTEB",
+          "count": 1
+        },
+        {
+          "value": "KJLN",
+          "count": 1
+        },
+        {
+          "value": "YKUR",
+          "count": 1
+        },
+        {
+          "value": "DIGA",
+          "count": 1
+        },
+        {
+          "value": "EGMH",
+          "count": 1
+        },
+        {
+          "value": "YMCO",
+          "count": 1
+        },
+        {
+          "value": "UKCK",
+          "count": 1
+        },
+        {
+          "value": "KIWI",
+          "count": 1
+        },
+        {
+          "value": "CAG3",
+          "count": 1
+        },
+        {
+          "value": "EGTG",
+          "count": 1
+        },
+        {
+          "value": "FXTA",
+          "count": 1
+        },
+        {
+          "value": "VE-0207",
+          "count": 1
+        },
+        {
+          "value": "SEMA",
+          "count": 1
+        },
+        {
+          "value": "AYY",
+          "count": 1
+        },
+        {
+          "value": "MUMO",
+          "count": 1
+        },
+        {
+          "value": "MMSC",
+          "count": 1
+        },
+        {
+          "value": "KPIE",
+          "count": 1
+        },
+        {
+          "value": "CKV4",
+          "count": 1
+        },
+        {
+          "value": "BZ-SVK",
+          "count": 1
+        },
+        {
+          "value": "UESK",
+          "count": 1
+        },
+        {
+          "value": "EPWA",
+          "count": 1
+        },
+        {
+          "value": "UA-0049",
+          "count": 1
+        },
+        {
+          "value": "FOOI",
+          "count": 1
+        },
+        {
+          "value": "SBJA",
+          "count": 1
+        },
+        {
+          "value": "LIPQ",
+          "count": 1
+        },
+        {
+          "value": "FMNT",
+          "count": 1
+        },
+        {
+          "value": "TN-0002",
+          "count": 1
+        },
+        {
+          "value": "AYMO",
+          "count": 1
+        },
+        {
+          "value": "CNH2",
+          "count": 1
+        },
+        {
+          "value": "NDN",
+          "count": 1
+        },
+        {
+          "value": "FQCB",
+          "count": 1
+        },
+        {
+          "value": "GAYE",
+          "count": 1
+        },
+        {
+          "value": "SSPB",
+          "count": 1
+        },
+        {
+          "value": "U41",
+          "count": 1
+        },
+        {
+          "value": "SBOI",
+          "count": 1
+        },
+        {
+          "value": "VLOS",
+          "count": 1
+        },
+        {
+          "value": "CYXZ",
+          "count": 1
+        },
+        {
+          "value": "FNWK",
+          "count": 1
+        },
+        {
+          "value": "NZPN",
+          "count": 1
+        },
+        {
+          "value": "KGRF",
+          "count": 1
+        },
+        {
+          "value": "CYOO",
+          "count": 1
+        },
+        {
+          "value": "SBGR",
+          "count": 1
+        },
+        {
+          "value": "PPIZ",
+          "count": 1
+        },
+        {
+          "value": "KVLA",
+          "count": 1
+        },
+        {
+          "value": "YMYT",
+          "count": 1
+        },
+        {
+          "value": "DE-0419",
+          "count": 1
+        },
+        {
+          "value": "WAPP",
+          "count": 1
+        },
+        {
+          "value": "LLEY",
+          "count": 1
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 7,
+      "mean": 4.042442050277506,
+      "min": 3,
+      "standardDeviation": 0.5939624766251099,
+      "median": 4.0,
+      "mode": 4,
+      "valueDistribution": [
+        {
+          "bucket": [
+            3,
+            4
+          ],
+          "count": 676
+        },
+        {
+          "bucket": [
+            4,
+            5
+          ],
+          "count": 8055
+        },
+        {
+          "bucket": [
+            5,
+            6
+          ],
+          "count": 0
+        },
+        {
+          "bucket": [
+            6,
+            7
+          ],
+          "count": 308
+        },
+        {
+          "bucket": [
+            7,
+            "inf"
+          ],
+          "count": 150
+        }
+      ],
+      "zScoreOutliersCount": 458,
+      "zScoreOutliersSample": [
+        {
+          "value": 7,
+          "zScore": 4.979368337419755
+        },
+        {
+          "value": 6,
+          "zScore": 3.2957602992790433
+        }
+      ]
+    },
+    {
+      "name": "iso_region",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 2156,
+      "uniqueValuesCount": 1106,
+      "entropy": 6.603101186951424,
+      "mostCommonValues": [
+        {
+          "value": "US-AK",
+          "count": 334
+        },
+        {
+          "value": "AU-QLD",
+          "count": 219
+        },
+        {
+          "value": "US-CA",
+          "count": 157
+        },
+        {
+          "value": "AU-WA",
+          "count": 127
+        },
+        {
+          "value": "US-TX",
+          "count": 122
+        },
+        {
+          "value": "CA-BC",
+          "count": 101
+        },
+        {
+          "value": "CA-ON",
+          "count": 94
+        },
+        {
+          "value": "AU-NT",
+          "count": 87
+        },
+        {
+          "value": "AU-NSW",
+          "count": 80
+        },
+        {
+          "value": "CA-QC",
+          "count": 78
+        },
+        {
+          "value": "US-FL",
+          "count": 78
+        },
+        {
+          "value": "GB-ENG",
+          "count": 76
+        },
+        {
+          "value": "BR-SP",
+          "count": 63
+        },
+        {
+          "value": "PG-MPL",
+          "count": 57
+        },
+        {
+          "value": "AU-SA",
+          "count": 56
+        },
+        {
+          "value": "US-WA",
+          "count": 55
+        },
+        {
+          "value": "US-NY",
+          "count": 53
+        },
+        {
+          "value": "PF-U-A",
+          "count": 51
+        },
+        {
+          "value": "US-MI",
+          "count": 48
+        },
+        {
+          "value": "ID-PA",
+          "count": 47
+        },
+        {
+          "value": "US-AZ",
+          "count": 46
+        },
+        {
+          "value": "PG-WPD",
+          "count": 46
+        },
+        {
+          "value": "US-PA",
+          "count": 44
+        },
+        {
+          "value": "BR-MG",
+          "count": 43
+        },
+        {
+          "value": "US-OK",
+          "count": 43
+        },
+        {
+          "value": "US-WI",
+          "count": 42
+        },
+        {
+          "value": "US-IA",
+          "count": 41
+        },
+        {
+          "value": "BR-RS",
+          "count": 41
+        },
+        {
+          "value": "US-IL",
+          "count": 41
+        },
+        {
+          "value": "CA-MB",
+          "count": 41
+        },
+        {
+          "value": "GB-SCT",
+          "count": 40
+        },
+        {
+          "value": "CA-AB",
+          "count": 40
+        },
+        {
+          "value": "US-OH",
+          "count": 38
+        },
+        {
+          "value": "US-CO",
+          "count": 38
+        },
+        {
+          "value": "US-GA",
+          "count": 37
+        },
+        {
+          "value": "US-IN",
+          "count": 37
+        },
+        {
+          "value": "US-OR",
+          "count": 36
+        },
+        {
+          "value": "GL-U-A",
+          "count": 36
+        },
+        {
+          "value": "US-KS",
+          "count": 36
+        },
+        {
+          "value": "US-MN",
+          "count": 35
+        },
+        {
+          "value": "BR-BA",
+          "count": 35
+        },
+        {
+          "value": "US-NC",
+          "count": 34
+        },
+        {
+          "value": "PG-CPM",
+          "count": 33
+        },
+        {
+          "value": "CA-NT",
+          "count": 33
+        },
+        {
+          "value": "AU-VIC",
+          "count": 33
+        },
+        {
+          "value": "US-VA",
+          "count": 32
+        },
+        {
+          "value": "CA-NU",
+          "count": 32
+        },
+        {
+          "value": "US-NE",
+          "count": 31
+        },
+        {
+          "value": "US-SC",
+          "count": 31
+        },
+        {
+          "value": "US-NM",
+          "count": 30
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 7,
+      "mean": 5.121123081945805,
+      "min": 4,
+      "standardDeviation": 0.5461096440629114,
+      "median": 5.0,
+      "mode": 5,
+      "valueDistribution": [
+        {
+          "bucket": [
+            4,
+            5
+          ],
+          "count": 878
+        },
+        {
+          "bucket": [
+            5,
+            6
+          ],
+          "count": 6323
+        },
+        {
+          "bucket": [
+            6,
+            7
+          ],
+          "count": 1985
+        },
+        {
+          "bucket": [
+            7,
+            "inf"
+          ],
+          "count": 3
+        }
+      ],
+      "zScoreOutliersCount": 3,
+      "zScoreOutliersSample": [
+        {
+          "value": 7,
+          "zScore": 3.440475623312285
+        }
+      ]
+    },
+    {
+      "name": "iso_country",
+      "type": "string",
+      "columnConfigurationOverride": {},
+      "distinctValuesCount": 239,
+      "uniqueValuesCount": 32,
+      "entropy": 3.953310019502267,
+      "mostCommonValues": [
+        {
+          "value": "US",
+          "count": 2019
+        },
+        {
+          "value": "AU",
+          "count": 617
+        },
+        {
+          "value": "CA",
+          "count": 495
+        },
+        {
+          "value": "BR",
+          "count": 415
+        },
+        {
+          "value": "PG",
+          "count": 380
+        },
+        {
+          "value": "CN",
+          "count": 257
+        },
+        {
+          "value": "ID",
+          "count": 221
+        },
+        {
+          "value": "RU",
+          "count": 207
+        },
+        {
+          "value": "CO",
+          "count": 147
+        },
+        {
+          "value": "IN",
+          "count": 137
+        },
+        {
+          "value": "FR",
+          "count": 133
+        },
+        {
+          "value": "GB",
+          "count": 126
+        },
+        {
+          "value": "AR",
+          "count": 109
+        },
+        {
+          "value": "DE",
+          "count": 104
+        },
+        {
+          "value": "MX",
+          "count": 100
+        },
+        {
+          "value": "JP",
+          "count": 97
+        },
+        {
+          "value": "ZA",
+          "count": 93
+        },
+        {
+          "value": "IR",
+          "count": 75
+        },
+        {
+          "value": "PH",
+          "count": 72
+        },
+        {
+          "value": "VE",
+          "count": 66
+        },
+        {
+          "value": "TR",
+          "count": 65
+        },
+        {
+          "value": "PK",
+          "count": 65
+        },
+        {
+          "value": "IT",
+          "count": 64
+        },
+        {
+          "value": "MY",
+          "count": 63
+        },
+        {
+          "value": "MG",
+          "count": 63
+        },
+        {
+          "value": "CD",
+          "count": 61
+        },
+        {
+          "value": "NZ",
+          "count": 59
+        },
+        {
+          "value": "NO",
+          "count": 58
+        },
+        {
+          "value": "ES",
+          "count": 56
+        },
+        {
+          "value": "CL",
+          "count": 53
+        },
+        {
+          "value": "PF",
+          "count": 51
+        },
+        {
+          "value": "SE",
+          "count": 51
+        },
+        {
+          "value": "ET",
+          "count": 49
+        },
+        {
+          "value": "PE",
+          "count": 48
+        },
+        {
+          "value": "TH",
+          "count": 46
+        },
+        {
+          "value": "GR",
+          "count": 45
+        },
+        {
+          "value": "MM",
+          "count": 44
+        },
+        {
+          "value": "DZ",
+          "count": 43
+        },
+        {
+          "value": "NP",
+          "count": 43
+        },
+        {
+          "value": "BO",
+          "count": 41
+        },
+        {
+          "value": "AO",
+          "count": 41
+        },
+        {
+          "value": "KE",
+          "count": 41
+        },
+        {
+          "value": "SB",
+          "count": 38
+        },
+        {
+          "value": "IS",
+          "count": 38
+        },
+        {
+          "value": "MZ",
+          "count": 37
+        },
+        {
+          "value": "PA",
+          "count": 37
+        },
+        {
+          "value": "BS",
+          "count": 36
+        },
+        {
+          "value": "GL",
+          "count": 36
+        },
+        {
+          "value": "UA",
+          "count": 35
+        },
+        {
+          "value": "SA",
+          "count": 34
+        }
+      ],
+      "missingValuesCount": 0,
+      "max": 2,
+      "mean": 2.0,
+      "min": 2,
+      "standardDeviation": 0.0,
+      "median": 2.0,
+      "mode": 2,
+      "valueDistribution": [
+        {
+          "bucket": [
+            2.0,
+            2.0
+          ],
+          "count": 9189
+        }
+      ],
+      "zScoreOutliersCount": 0,
+      "zScoreOutliersSample": []
+    }
+  ],
+  "jobName": "airport-codes profile job",
+  "jobRunId": "db_74003fcc5eb44b85c6f6e5802979f5cc67c3d5186c09e1056681e74e1b4a5161",
+  "location": "s3://andreiliphd-glue-output/airport-codes_74003fcc5eb44b85c6f6e5802979f5cc67c3d5186c09e1056681e74e1b4a5161.json",
+  "startedOn": "2022-01-05T23:52:21.392916",
+  "writtenOn": "2022-01-05T23:53:59.698167",
+  "version": "1.0"
+}

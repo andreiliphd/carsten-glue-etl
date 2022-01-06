@@ -1,0 +1,32 @@
+{
+  "sampleSize": 3096313,
+  "rulesetResults": [
+    {
+      "name": "dq-immigration-check",
+      "description": "Checking immigration table.",
+      "arn": "arn:aws:databrew:eu-north-1:047747820233:ruleset/dq-immigration-check",
+      "lastModifiedDate": "Thu Jan 06 09:06:09 UTC 2022",
+      "ruleResults": [
+        {
+          "name": "number-of-rows-check",
+          "definition": {
+            "Name": "number-of-rows-check",
+            "Disabled": false,
+            "CheckExpression": "AGG(ROWS_COUNT) == :val1",
+            "SubstitutionMap": {
+              ":val1": "3096313"
+            }
+          },
+          "status": "SUCCEEDED"
+        }
+      ],
+      "status": "SUCCEEDED"
+    }
+  ],
+  "jobName": "immigration profile job",
+  "jobRunId": "db_2435c2a91f69448a135f1a5d93b2b81d0b88005c02b33c20c9c44b98576ac7d9",
+  "location": "s3://andreiliphd-glue-output/immigration_2435c2a91f69448a135f1a5d93b2b81d0b88005c02b33c20c9c44b98576ac7d9_dq-validation-report.json",
+  "startedOn": "2022-01-06T09:07:46.932199",
+  "writtenOn": "2022-01-06T09:14:52.116356",
+  "version": "1.0"
+}

@@ -1,0 +1,32 @@
+{
+  "sampleSize": 9189,
+  "rulesetResults": [
+    {
+      "name": "dq-airport-codes",
+      "description": null,
+      "arn": "arn:aws:databrew:eu-north-1:047747820233:ruleset/dq-airport-codes",
+      "lastModifiedDate": "Wed Jan 05 22:18:53 UTC 2022",
+      "ruleResults": [
+        {
+          "name": "check-number-of-rows-in-airoport-codes",
+          "definition": {
+            "Name": "check-number-of-rows-in-airoport-codes",
+            "Disabled": false,
+            "CheckExpression": "AGG(ROWS_COUNT) == :val1",
+            "SubstitutionMap": {
+              ":val1": "9189"
+            }
+          },
+          "status": "SUCCEEDED"
+        }
+      ],
+      "status": "SUCCEEDED"
+    }
+  ],
+  "jobName": "airport-codes profile job",
+  "jobRunId": "db_74003fcc5eb44b85c6f6e5802979f5cc67c3d5186c09e1056681e74e1b4a5161",
+  "location": "s3://andreiliphd-glue-output/airport-codes_74003fcc5eb44b85c6f6e5802979f5cc67c3d5186c09e1056681e74e1b4a5161_dq-validation-report.json",
+  "startedOn": "2022-01-05T23:52:21.392916",
+  "writtenOn": "2022-01-05T23:53:59.622354",
+  "version": "1.0"
+}
