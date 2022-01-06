@@ -54,6 +54,7 @@ Following datasets are used for this project:
     - Format: CSV
 
 Total number of rows after ETL: 3108393.
+For more details, please, check `size_of_database.ipynb`.
 
 ## Data Exploration
 Data Exploration was performed using AWS Athena.
