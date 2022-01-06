@@ -25,6 +25,36 @@ quality checks and data cleaning operations.
 
 ---
 
+## Project Summary
+Project performs ETL on `I94 Immigration Data 2016`, `U.S. City Demographic Data` and `Airport Codes Table` datasets. 
+
+## Scope
+I plan to create a data lake using Pyspark about immigrants destinations in US. To achieve this, I've used I94 immigrations dataset along with US demographics dataset. Processed data lake tables could be used to analyse immigration trends at US destination cities and origin of the travelers. Output is generated in `Apache Parquet` columnar format for better performance on aggregation queries.
+
+Analytics queries include:
+- Which airport immigrants used the most to travel to?
+- Which airport immigrants used the most to travel from?
+- What are top most airports used by immigrants?
+
+## Datasets
+Following datasets are used for this project:
+1. `I94 Immigration Data 2016`: US National Tourism and Trade Office
+    - Source: [https://travel.trade.gov/research/reports/i94/historical/2016.html](https://travel.trade.gov/research/reports/i94/historical/2016.html)
+    - Number of rows after ETL: 3096313
+    - Format: Parquet
+2. `U.S. City Demographic Data`: OpenSoft
+    - Source: [https://public.opendatasoft.com/explore/dataset/us-cities-demographics/export/](https://public.opendatasoft.com/explore/dataset/us-cities-demographics/export/)
+    - Number of rows after ETL: 2891
+    - Format: CSV
+3. `Airport Codes Table`: Datahub
+    - Source: [https://datahub.io/core/airport-codes#data](https://datahub.io/core/airport-codes#data)
+    - Number of rows after ETL: 9189
+    - Format: CSV
+
+Total number of rows after ETL: 3108393.
+
+
+ 
 ## Motivation
 ### Product
 There are three main products that I considered before executing project:
