@@ -29,8 +29,10 @@ quality checks and data cleaning operations.
 Project performs ETL on `I94 Immigration Data 2016`, `U.S. City Demographic Data` and `Airport Codes Table` datasets. 
 
 ## Scope
-I plan to create a data lake using Pyspark about immigrants destinations in US. To achieve this, I've used I94 immigrations dataset along with US demographics dataset. Processed data lake tables could be used to analyse immigration trends at US destination cities and origin of the travelers. Output is generated in `Apache Parquet` columnar format for better performance on aggregation queries.
+ETL: S3 -> AWS Catalog -> AWS RDS(PostgreSQL)
+ETL to preprocess data for analyzing airports used by immigrants in US.
 
+## Queries
 Analytics queries include:
 - Which airport immigrants used the most to travel to?
 - Which airport immigrants used the most to travel from?
@@ -53,7 +55,12 @@ Following datasets are used for this project:
 
 Total number of rows after ETL: 3108393.
 
-
+## Data Exploration
+Data Exploration was performed using AWS Athena.
+Conclusions:
+1. Some columns are not needed as they mostly contained NULL values.
+2. Data type for some columns was changed.
+3. Date data type was added for `arrdata` and `depdate`.
  
 ## Motivation
 ### Product
