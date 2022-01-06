@@ -150,11 +150,20 @@ Data model is simple and suitable for further analysis in BI tools such as Table
 
 ## Scenarios
 - The data was increased by 100x.
-We can add more nodes to increase processing power of ETL pipeline. 
+Two dimensions that we have to consider: compute and storage.
+We can add more nodes to raise processing power of ETL pipeline scaling horizontally, 
+increasing concurrency.
+We can add more storage to instances scaling vertically, increasing storage capacity.
 - The pipelines would be run on a daily basis by 7 am every day.
-There is a schedule functionality in AWS Glue.
+There is a scheduling functionality in AWS Glue.
 - The database needed to be accessed by 100+ people.
-We can scale vertically.
+We can scale vertically or/and horizontally. 
+Vertical scaling is an older approach. Programming concepts developed dramatically that
+allow to scale horizontally without problems. You can add Elastic Load Balancer and 
+choose different strategies for distributing your traffic across replicas in AWS RDS.
+I also want to mention that S3 is growing very fast and AWS Athena allows working
+with more comfort even with CSV data. You can offload some heavy tasks from PostgreSQL
+to S3. And query your data with AWS Athena.
 
 ## Data Quality
 ### Airport codes
