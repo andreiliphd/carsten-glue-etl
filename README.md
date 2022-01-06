@@ -165,7 +165,7 @@ Full [report](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-q
 ### Immigration
 Full [report](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=immigration_2435c2a91f69448a135f1a5d93b2b81d0b88005c02b33c20c9c44b98576ac7d9.json).
 
-![immigration](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=immigration%20profile%20job_2022%2D01%2D06%2D12_06_42.png)
+![immigration](https://github.com/andreiliphd/carsten-glue-etl/blob/master/data-quality-reports/immigration%20profile%20job_2022-01-06-12_06_42.png?raw=true)
 
 
 ## License
