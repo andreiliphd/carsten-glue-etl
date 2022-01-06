@@ -102,21 +102,25 @@ DB_NAME=immigration
 ```
 2.Upload Immigration dataset from `data/sas-data` to S3. Remember to upload only `parquet` files
 as it causes errors in AWS Glue while loading data.
-3. Upload Airport Codes dataset from `data/` to S3.
-4. Upload State Codes(`us-city-demographics.csv`) data from `data` to S3.
+3. Upload Airport Codes(`airport-codes_csv.csv`) dataset from `data/` to S3.
+4. Upload State Codes(`us-city-demographics.csv`) dataset from `data/` to S3.
 5. Upload code to AWS Glue Visual Editor.
 6. Upload code from this repository to ETL Jobs.
 Enjoy simplified ETL process.
 
 ---
+## Workflow
+ETL steps:
+1. Loading data from S3 to AWS Catalog.
+2. Cleaning data.
+3. Moving data to PostgreSQL.
 
 ## Explanation
 ETL performed in AWS Glue.
 Data quality checks performed in AWS DataBrew.
 Schema is exported from JetBrains DataGrip.
 
-Star Schema was used when designing a database.
-![schema](https://github.com/andreiliphd/carsten-glue-etl/blob/master/schema/schema.png)
+
 
 ## Data Dictionary
 ### List databases
@@ -134,6 +138,9 @@ Star Schema was used when designing a database.
  ('public', 'state_codes')]
 ```
 ---
+Star Schema was used when designing a database.
+![schema](https://github.com/andreiliphd/carsten-glue-etl/blob/master/schema/schema.png)
+
 
 ## License
 This project is licensed under the terms of the **MIT** license.
