@@ -141,6 +141,30 @@ Schema is exported from JetBrains DataGrip.
 Star Schema was used when designing a database.
 ![schema](https://github.com/andreiliphd/carsten-glue-etl/blob/master/schema/schema.png)
 
+Data model is simple and suitable for further analysis in BI tools such as Tableau or Metabase.
+
+## Scenarios
+- The data was increased by 100x.
+We can add more nodes to increase processing power of ETL pipeline. 
+- The pipelines would be run on a daily basis by 7 am every day.
+There is a schedule functionality in AWS Glue.
+- The database needed to be accessed by 100+ people.
+We can scale vertically.
+
+## Data Quality
+### Airport codes
+Full [report](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=airport%2Dcodes_74003fcc5eb44b85c6f6e5802979f5cc67c3d5186c09e1056681e74e1b4a5161.json).
+
+![airport-codes](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=airport%2Dcodes%20profile%20job_2022%2D01%2D06%2D02_51_06.png)
+### State codes
+Full [report](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=state%2Dcodes_7e9ad332a45e3b174b68c634396d762cf206ce2f04706e6a31b9f750121c91ad.json).
+
+![state-codes](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=state%2Dcodes%20profile%20job_2022%2D01%2D06%2D12_04_25.png)
+### Immigration
+Full [report](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=immigration_2435c2a91f69448a135f1a5d93b2b81d0b88005c02b33c20c9c44b98576ac7d9.json).
+
+![immigration](https://github.com/andreiliphd/carsten-glue-etl/tree/master/data-quality-reports#:~:text=immigration%20profile%20job_2022%2D01%2D06%2D12_06_42.png)
+
 
 ## License
 This project is licensed under the terms of the **MIT** license.
