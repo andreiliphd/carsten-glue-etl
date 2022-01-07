@@ -28,15 +28,21 @@ quality checks and data cleaning operations.
 ## Project Summary
 Project performs ETL on `I94 Immigration Data 2016`, `U.S. City Demographic Data` and `Airport Codes Table` datasets. 
 
+---
+
 ## Scope
 ETL: S3 -> AWS Catalog -> AWS RDS(PostgreSQL)
 ETL to preprocess data for analyzing airports used by immigrants in US.
+
+---
 
 ## Queries
 Analytics queries include:
 - What is the total population of top 3 most loved states by immigrants?
 - What types of airports immigrants prefer?
 You can find these queries in `queries.ipynb`.
+
+---
 
 ## Datasets
 Following datasets are used for this project:
@@ -58,13 +64,17 @@ For more details, please, check `size_of_database.ipynb`.
 You can also find number of rows in database from [Data Quality](#data-quality) section of this file.
 Analytical queries in `queries.ipynb` clearly show size of database.
 
+---
+
 ## Data Exploration
 Data Exploration was performed using AWS Athena.
 Conclusions:
 1. Some columns are not needed as they mostly contained NULL values.
 2. Data type for some columns was changed.
 3. Date data type was added for `arrdata` and `depdate`.
- 
+
+---
+
 ## Motivation
 ### Product
 There are three main products that I considered before executing project:
@@ -97,6 +107,8 @@ Minuses:
 
 ### Project
 The aim of the project is to analyze airports immigrants use most.
+
+---
 
 ## Features
 - AWS Athena support
@@ -160,12 +172,14 @@ ETL steps:
 The whole process is automatic and can be scheduled, run on demand or triggered by event.
 ![workflow](https://github.com/andreiliphd/carsten-glue-etl/blob/master/screenshots/workflow.png?raw=true)
 
+---
+
 ## Explanation
 ETL performed in AWS Glue.
 Data quality checks performed in AWS DataBrew.
 Schema is exported from JetBrains DataGrip.
 
-
+---
 
 ## Data Dictionary
 ### List databases
@@ -182,11 +196,83 @@ Schema is exported from JetBrains DataGrip.
  ('public', 'immigration'),
  ('public', 'state_codes')]
 ```
----
+
+### Airport codes table
+```
+    gps_code     text,
+    coordinates  text,
+    iata_code    text
+        constraint iata_code_unique
+            unique,
+    type         text,
+    local_code   text,
+    name         text,
+    municipality text,
+    elevation_ft bigint,
+    ident        text,
+    iso_region   text,
+    iso_country  text,
+    id           serial
+        primary key
+```
+
+### State codes table
+```
+    city                     text,
+    state                    text,
+    "median age"             double precision,
+    "male population"        bigint,
+    "female population"      bigint,
+    "total population"       bigint,
+    "number of veterans"     bigint,
+    "foreign-born"           bigint,
+    "average household size" double precision,
+    "state code"             text,
+    race                     text,
+    count                    bigint,
+    id                       serial
+        primary key
+```
+
+### Immigration table
+```
+    cicid    bigint,
+    i94yr    integer,
+    i94mon   integer,
+    i94cit   integer,
+    i94res   integer,
+    i94port  text,
+    arrdate  date,
+    i94mode  integer,
+    i94addr  text,
+    depdate  date,
+    i94bir   integer,
+    i94visa  integer,
+    count    bigint,
+    dtadfile text,
+    visapost text,
+    occup    text,
+    entdepa  text,
+    entdepd  text,
+    entdepu  text,
+    matflag  text,
+    biryear  text,
+    dtaddto  text,
+    gender   text,
+    insnum   bigint,
+    airline  text,
+    admnum   double precision,
+    fltno    text,
+    visatype text,
+    id       serial
+        primary key
+```
 Star Schema was used when designing a database.
 ![schema](https://github.com/andreiliphd/carsten-glue-etl/blob/master/schema/schema.png)
 
 Data model is simple and suitable for further analysis in BI tools such as Tableau or Metabase.
+
+---
 
 ## Scenarios
 - The data was increased by 100x.
@@ -209,6 +295,8 @@ Regarding user management there is an excellent article on
 We should create database roles, users and group. We can also use IAM for authentication.
 RDS Parameter Groups can be used to customize monitoring of user activity.
 
+---
+
 ## Data Quality
 ### Airport codes
 Full [report](https://github.com/andreiliphd/carsten-glue-etl/blob/master/data-quality-reports/airport-codes_74003fcc5eb44b85c6f6e5802979f5cc67c3d5186c09e1056681e74e1b4a5161.json).
@@ -225,6 +313,7 @@ Full [report](https://github.com/andreiliphd/carsten-glue-etl/blob/master/data-q
 
 ![immigration](https://github.com/andreiliphd/carsten-glue-etl/blob/master/data-quality-reports/immigration%20profile%20job_2022-01-06-12_06_42.png?raw=true)
 
+---
 
 ## License
 This project is licensed under the terms of the **MIT** license.
